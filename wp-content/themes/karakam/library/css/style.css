@@ -1304,6 +1304,7 @@ and more scalable.
   /* end current highlighters */ }
   .nav li {
     margin-right:1%;
+    width:19%;
     /*
     so you really have to rethink your dropdowns for mobile.
     you don't want to have it expand too much because the
@@ -1319,18 +1320,17 @@ and more scalable.
         text-decoration: none;
         padding: 44px 0px 20px 0;
         border-bottom: 1px solid #5f1c50!important;
-        width: 135px;
         text-align:center;
         transition: all 0.5s ease;
         -webkit-transition: 0.2s ease;
 
     }
-      /*
-      remember this is for mobile ONLY, so there's no need
-      to even declare hover styles here, you can do it in
-      the style.scss file where it's relevant. We want to
-      keep this file as small as possible!
-      */ }
+
+    .nav li ul.sub-menu li,
+    .nav li ul.children li {
+      width:100%;
+    }
+
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
       padding-left: 30px; }
@@ -1383,6 +1383,8 @@ POSTS & CONTENT STYLES
   .page section .vc_row:nth-child(2) .wpb_single_image img{
     margin-top:80px;
   }
+
+
 .Sub_page h2{
   color:#00a69d;
   font-size:40px;
@@ -1877,26 +1879,30 @@ you can add resource intensive styles.
       .nav li ul.sub-menu,
       .nav li ul.children {
         margin-top: 0;
-        border: 1px solid #ccc;
         border-top: 0;
         position: absolute;
         visibility: hidden;
         z-index: 8999;
+        background-color: transparent;
         /* highlight sub-menu current page */ }
         .nav li ul.sub-menu li,
         .nav li ul.children li {
-          /*
-          if you need to go deeper, go nuts
-          just remember deeper menus suck
-          for usability. k, bai.
-          */ }
+          background-color:white;
+          margin-bottom:1px;
+           }
           .nav li ul.sub-menu li a,
           .nav li ul.children li a {
-            padding-left: 10px;
+            padding: 5px 10px;
             border-right: 0;
             display: block;
-            width: 180px;
-            border-bottom: 1px solid #ccc; }
+            border-bottom: 1px solid #5f1c50!important; 
+            font-size:14px;}
+
+          .nav li ul.sub-menu li a:hover,
+          .nav li ul.children li a:hover {
+            
+          }
+
           .nav li ul.sub-menu li:last-child a,
           .nav li ul.children li:last-child a {
             border-bottom: 0; }

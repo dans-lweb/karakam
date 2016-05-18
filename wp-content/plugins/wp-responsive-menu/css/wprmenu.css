@@ -228,7 +228,7 @@ body.admin-bar #wprmenu_menu.right {
 	overflow: hidden;
 	border-bottom:1px solid #131212;
 	border-top:1px solid #474747;
-	width:100%;
+	width:auto;
 	position: relative;
 }
 #wprmenu_menu.wprmenu_levels ul li a{
