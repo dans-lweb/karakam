@@ -283,7 +283,7 @@ hr {
 /*
  * proper formatting (http://blog.fontdeck.com/post/9037028497/hyphens)
 */
-p {
+p, section ul li{
   -webkit-hyphens: auto;
   -epub-hyphens: auto;
   -moz-hyphens: auto;
@@ -1319,7 +1319,7 @@ and more scalable.
         text-decoration: none;
         padding: 44px 0px 20px 0;
         border-bottom: 1px solid #5f1c50!important;
-        width: 140px;
+        width: 135px;
         text-align:center;
         transition: all 0.5s ease;
         -webkit-transition: 0.2s ease;
@@ -1343,7 +1343,7 @@ and more scalable.
     width:100%;
     text-align:center;
   }
-  
+
   header #logo img{
     height:65px;
   }
@@ -1376,6 +1376,13 @@ POSTS & CONTENT STYLES
   padding-top:0;
 }
 
+.page section{
+  padding:0;
+}
+
+  .page section .vc_row:nth-child(2) .wpb_single_image img{
+    margin-top:80px;
+  }
 .Sub_page h2{
   color:#00a69d;
   font-size:40px;
@@ -1967,7 +1974,7 @@ you can add resource intensive styles.
   
   ******************************************************************/
   .wrap {
-    width: auto; } }
+    width: 99.1%; } }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
