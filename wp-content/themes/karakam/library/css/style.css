@@ -1303,6 +1303,7 @@ and more scalable.
   /* highlight current page */
   /* end current highlighters */ }
   .nav li {
+    margin-right:1%;
     /*
     so you really have to rethink your dropdowns for mobile.
     you don't want to have it expand too much because the
@@ -1318,7 +1319,6 @@ and more scalable.
         text-decoration: none;
         padding: 44px 0px 20px 0;
         border-bottom: 1px solid #5f1c50!important;
-        margin: 0px 29px;
         width: 140px;
         text-align:center;
         transition: all 0.5s ease;
@@ -1335,6 +1335,19 @@ and more scalable.
     .nav li ul.children li a {
       padding-left: 30px; }
 
+@media only screen and (max-width: 1330px) {
+  header .col-sm-offset-1{
+    margin:0;
+  }
+  header .col-sm-3{
+    width:100%;
+    text-align:center;
+  }
+  
+  header #logo img{
+    height:65px;
+  }
+}
 /* end .nav */
 /*********************
 POSTS & CONTENT STYLES
