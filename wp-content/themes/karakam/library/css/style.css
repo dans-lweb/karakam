@@ -288,7 +288,7 @@ p, section ul li{
   -epub-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto; 
-  color:#5f1c50;
+  color:#464646;
   font-family:'kiroregular';
   font-size:19px;
   }
@@ -391,6 +391,15 @@ nav ol {
 img {
   border: 0; }
 
+.wp-post-image, .Head-archive{
+  width:100%;
+  height:auto;
+  max-height:500px;
+}
+
+.Head-archive-container{
+  padding:0;
+}
 /**
  * Correct overflow displayed oddly in IE 9.
  */
@@ -1325,7 +1334,7 @@ and more scalable.
         -webkit-transition: 0.2s ease;
 
     }
-
+   
     .nav li ul.sub-menu li,
     .nav li ul.children li {
       width:100%;
@@ -1385,7 +1394,7 @@ POSTS & CONTENT STYLES
   }
 
 
-.Sub_page h2{
+.Sub_page h2, .post .article-header h1{
   color:#00a69d;
   font-size:40px;
 }
@@ -1426,9 +1435,10 @@ POSTS & CONTENT STYLES
 /* style by tag (i.e. tag-news) */
 /* post meta */
 .byline {
-  color: #9fa6b4;
+  color: #5f1c50;
   font-style: italic;
-  margin: 0; }
+  margin: 0; 
+  font-family: 'kirolight_italic';}
 
 /* entry content */
 .entry-content {
@@ -1517,6 +1527,65 @@ POSTS & CONTENT STYLES
 /* gallery caption styles */
 .tags {
   margin: 0; }
+
+.archive article {
+  margin:2% 10% 0 10%;
+  border-bottom:1px solid #5f1c50;
+}
+
+.archive article:last-child{
+  border-bottom: none;
+}
+
+.archive article h1{
+  font-family: 'kirolight';
+}
+
+.archive article .col-md-6:first-child{
+  padding-left:0;
+}
+.archive article .col-md-6:last-child{
+  padding-right:0;
+}
+
+.archive article .col-md-6 img{
+  max-height:330px;
+  padding-bottom:40px;
+  padding-top:20px;
+}
+
+.contact_page_container{
+  height:900px;
+  position:relative;
+}
+
+.contact_page_container .vc_column-inner{
+  height:900px;
+}
+
+.contact_page{
+  position:absolute;
+  right:15%;
+}
+.contact_page p {
+  color:#5f1c50;
+  text-align:center;
+  font-size:22px;
+  font-family: 'kirobold';
+}
+
+.contact_page p em{
+  font-size:32px;
+  font-family: 'kirolight';
+  font-style:normal;
+}
+.contact_page h2{
+  text-align:center;
+  margin-top:30px;
+  color:white;
+  font-size:40px;
+}
+
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -1884,6 +1953,7 @@ you can add resource intensive styles.
         visibility: hidden;
         z-index: 8999;
         background-color: transparent;
+        width:100%;
         /* highlight sub-menu current page */ }
         .nav li ul.sub-menu li,
         .nav li ul.children li {
